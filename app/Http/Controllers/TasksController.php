@@ -57,7 +57,7 @@ class TasksController extends Controller
     /**
      * タスク更新処理
      */
-    public function update(TaskRequest $request, $id)
+    public function update(TasksRequest $request, $id)
     {
         // idを条件にtasksテーブルからレコードを取得
         $task = Task::find($id);
